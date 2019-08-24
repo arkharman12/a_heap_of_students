@@ -1,0 +1,57 @@
+Harmanjot Singh
+Professor Andrew Harris
+Computing II
+19 October 2018
+
+						                          A Heap of Students Algorithm
+
+•Goals - The main goal of this program is to build a normalized student record system at a university. 
+
+•Input - The program takes an input file named “students.dat” which consists of information about 50 different students including things like their first name, last name, address, date of birth, anticipated graduation date, grade point average etc. 
+  
+•Output - The output of this program is to open up three different kinds of .txt files, for example “fullReport.txt”, “shortReport.txt” and “alphaReport.txt”. Firstly, the file named “fullReport.txt” will be a list of all data for all students in a report format. Secondly, “shortReport.txt” file will only contain the first and last name of each student. Finally, the “alphaReport.txt” file will hold a list of student names in alphabetical order.  
+
+•Steps - Address.h:
+	1.Make a class named Address with public and private values for address.cpp.
+	2.In the private field, declare all the private variables or attributes for the Address class. For example, addLine1, addLine2, City, State and zipCode.
+	3.In the public field, create getters and setters for addLine1, addLine2, City, State and zipCode. Also, create a default address constructor that initializes everything to nil along with a destructor, including the date and address objects it creates on the heap. 
+ 
+Address.cpp:
+	1.Declare the default constructor that initializes everything to nothing and a second constructor that lets us create the object with non-default values. 
+	2.Declare the default destructor since address doesn’t create anything on the heap.
+	3.Declare all the setters and getters for addLine1, addLine2, City, State and zipCode. 
+	4.Create an output stream for the object that outputs all the student information. Print out the address.
+
+Date.h:
+	1.Make a class named Date with public and private values for date.cpp.
+	2.In the private field, create all the private variables or attributes for the Date class. For example, month, day and year. 
+	3.In the public field, create getters and setters for month, day, and year.  Also, create a default Date constructor and a Date destructor.
+
+Date.cpp:
+	1.Declare the default Date constructor that initializes everything to nothing and a second Date constructor that lets us create the object with non-default values. 
+	2.Declare the default destructor. 
+	3.Declare all the setters and getters for month, day and year.
+	4.Create a function for operator that streams out the date content. Then print the date contents. 
+
+Student.h:
+	1.Make a class named Student with public and private values for student.cpp.
+	2.In the private field, create all the private variables or attributes for the Student class. For example, firstName, lastName, gradePointAvg, completeCredithours and objects for address birthday 	and graduation date.
+	3.In the public field, create getters and setters for first name, last name, address, birth day, graduation day, gpa and credit hours.  Also, create a default Student constructor and a Student 	destructor.
+	
+Student.cpp:
+	1.Declare the Student constructor that take a string. Create a string stream with the input line. 
+	2.Create three new objects for address birth day and graduation day.
+	3.Initialize bunch of placeholder strings. 
+	4.Declare all the setters and getters for first name, last name, address, birth day, graduation day, gpa and credit hours.  
+	5.Stream the object data and set the entire object which will just take a string. 
+	6.Print the entire record. 
+	7.Print the method that just prints the first and last name. 
+
+main.cpp:
+	1.Create a swap function that changes the string locations.
+	2.Implement the bubblesort algorithm but with strings not numbers. 
+	3.Output the stream for full report, short report and alpha report. Also open the text file for full report, short report and alpha report.
+	4.Open the “student.dat file”. Initialize a string that will hold the one line of the file at a time. Create a for loop that will iterate over all the lines in the given file. 
+	5.Create three new for loops that will take care of each task that is needed to be performed in full report, short report and alpha report.
+	6.Finally close the full report, short report and alpha report file. 
+  
